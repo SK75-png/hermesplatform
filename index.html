@@ -1059,6 +1059,28 @@ footer {
       <h2 class="section-title" data-i18n="how_title">Три шага до результата</h2>
       <p class="section-sub" data-i18n="how_sub">Никаких сложных интеграций. Просто Telegram и ваш бизнес.</p>
       <div class="how-steps reveal">
+        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:32px;">
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;transition:all 0.3s;" onmouseenter="this.style.borderColor='var(--teal)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-size:28px;margin-bottom:10px;">🧠</div>
+            <div style="font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--teal);margin-bottom:6px;" data-i18n="feat1_title">Помнит тебя</div>
+            <div style="font-size:12px;color:var(--text-dim);line-height:1.5;" data-i18n="feat1_desc">Знает твою историю с первого дня. Контекст не теряется.</div>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;transition:all 0.3s;" onmouseenter="this.style.borderColor='var(--teal)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-size:28px;margin-bottom:10px;">✍️</div>
+            <div style="font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--teal);margin-bottom:6px;" data-i18n="feat2_title">Пишет первым</div>
+            <div style="font-size:12px;color:var(--text-dim);line-height:1.5;" data-i18n="feat2_desc">Сам инициирует в Telegram. Не ждёт пока ты вспомнишь.</div>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;transition:all 0.3s;" onmouseenter="this.style.borderColor='var(--teal)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-size:28px;margin-bottom:10px;">⏰</div>
+            <div style="font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--teal);margin-bottom:6px;" data-i18n="feat3_title">Напоминает вовремя</div>
+            <div style="font-size:12px;color:var(--text-dim);line-height:1.5;" data-i18n="feat3_desc">Помнит дедлайны и задачи. Напомнит в нужный день и час.</div>
+          </div>
+          <div style="background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:20px 16px;text-align:center;transition:all 0.3s;" onmouseenter="this.style.borderColor='var(--teal)'" onmouseleave="this.style.borderColor='var(--border)'">
+            <div style="font-size:28px;margin-bottom:10px;">💎</div>
+            <div style="font-family:var(--font-head);font-size:14px;font-weight:700;color:var(--teal);margin-bottom:6px;" data-i18n="feat4_title">Фильтрует шум</div>
+            <div style="font-size:12px;color:var(--text-dim);line-height:1.5;" data-i18n="feat4_desc">Не сыплет всё подряд. Только то что тебе нужно — бриллианты.</div>
+          </div>
+        </div>
         <div class="how-step">
           <span class="how-step-num">01</span>
           <div>
@@ -1429,7 +1451,15 @@ const translations = {
     email_placeholder: 'сіздің@email.com',
     footer_desc: 'Жаңа буын AI SaaS платформасы. Бриллиант, шу емес.',
     footer_product: 'Өнім', footer_legal: 'Құжаттар', footer_contact: 'Байланыс',
-    footer_demo: 'Демо', footer_terms: 'Шарттар', footer_rights: 'Барлық құқықтар қорғалған.'
+    footer_demo: 'Демо', footer_terms: 'Шарттар', footer_rights: 'Барлық құқықтар қорғалған.',
+    feat1_title: 'Сені есте сақтайды',
+    feat1_desc: 'Бірінші күннен бастап тарихыңды біледі. Контекст жоғалмайды.',
+    feat2_title: 'Бірінші жазады',
+    feat2_desc: 'Telegram-да өзі бастамашылық етеді. Есіңе түсіргенше күтпейді.',
+    feat3_title: 'Уақытында еске салады',
+    feat3_desc: 'Мерзімдер мен тапсырмаларды есте сақтайды. Керекті күні хабарлайды.',
+    feat4_title: 'Шуды сүзеді',
+    feat4_desc: 'Бәрін шашпайды. Тек қажеттісін ғана — бриллиант.'
   },
   en: {
     nav_how: 'How it works', nav_products: 'Products', nav_pricing: 'Pricing', nav_contact: 'Contact', nav_try: 'Try Free',
@@ -1484,7 +1514,15 @@ const translations = {
     email_placeholder: 'your@email.com',
     footer_desc: 'Next-generation AI SaaS platform. Diamonds, not noise.',
     footer_product: 'Product', footer_legal: 'Legal', footer_contact: 'Contact',
-    footer_demo: 'Demo', footer_terms: 'Terms', footer_rights: 'All rights reserved.'
+    footer_demo: 'Demo', footer_terms: 'Terms', footer_rights: 'All rights reserved.',
+    feat1_title: 'Remembers You',
+    feat1_desc: 'Knows your history from day one. Context is never lost.',
+    feat2_title: 'Writes First',
+    feat2_desc: 'Initiates in Telegram on its own. No need to remind it.',
+    feat3_title: 'Reminds on Time',
+    feat3_desc: 'Remembers deadlines and tasks. Notifies on the right day and hour.',
+    feat4_title: 'Filters the Noise',
+    feat4_desc: 'No information overload. Only what you need — diamonds.'
   }
 };
 
