@@ -1532,14 +1532,12 @@ function handleDemo(e) {
     alert('Введите корректный email');
     return;
   }
-  const TOKEN = '7417952910:AAFKdwhY9LoTNq1izWg6T6dNq4CPeb-5wE0';
-  const CHAT_ID = '700309440';
-  const text = `💎 Новая заявка с сайта Hermes!\n\n📧 Email: ${email}\n🕐 Время: ${new Date().toLocaleString('ru-RU', {timeZone: 'Asia/Almaty'})}`;
-  fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`, {
+  fetch('https://hermesbot-production-67be.up.railway.app/api/demo', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ chat_id: CHAT_ID, text: text })
+    body: JSON.stringify({ email: email })
   })
+  .then(res => res.json())
   .then(() => {
     document.getElementById('demoEmail').value = '';
     alert('✅ Заявка отправлена!');
