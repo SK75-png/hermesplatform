@@ -1017,7 +1017,7 @@ footer {
       <button class="lang-btn" onclick="setLang('kz')">KZ</button>
       <button class="lang-btn" onclick="setLang('en')">EN</button>
     </div>
-    <a href="https://t.me/hermes_ai_guide_bot" class="nav-cta" target="_blank" data-i18n="nav_try">Попробовать</a>
+    <a href="https://t.me/hermes_ai_guide_bot" class="nav-cta" target="_blank" data-i18n="nav_try" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'nav_try'});">Попробовать</a>
   </div>
 </nav>
 
@@ -1031,7 +1031,7 @@ footer {
       <p class="hero-sub" data-i18n="hero_sub">Искусственный интеллект, который работает на тебя — просто и с результатом.</p>
 
     <div class="hero-ctas">
-      <a href="https://t.me/hermes_ai_guide_bot" class="btn-primary" target="_blank">
+      <a href="https://t.me/hermes_ai_guide_bot" class="btn-primary" target="_blank" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'hero_try_free'});">
         ▶ <span data-i18n="hero_cta1">Попробовать бесплатно</span>
       </a>
       <a href="mailto:contact.hermes.ai@gmail.com" class="btn-secondary">
@@ -1156,21 +1156,21 @@ footer {
         <span class="product-tag">LIVE · БЕСПЛАТНО</span>
         <div class="product-name">Hermes Guide</div>
         <div class="product-desc" data-i18n="prod1_desc">Умный проводник по платформе. Отвечает на вопросы, помогает с онбордингом, доступен 24/7.</div>
-        <a href="https://t.me/hermes_ai_guide_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_guide">Открыть Guide →</a>
+        <a href="https://t.me/hermes_ai_guide_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_guide" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'product_guide'});">Открыть Guide →</a>
       </div>
       <div class="product-card reveal">
         <span class="product-icon">📊</span>
         <span class="product-tag">B2B</span>
         <div class="product-name">COO Assistant</div>
         <div class="product-desc" data-i18n="prod2_desc">Операционный директор в Telegram. Сделки, аналитика прибыли, Excel-отчёты, проактивные напоминания.</div>
-        <a href="https://t.me/hermes_coo_sk_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_coo">Открыть COO →</a>
+        <a href="https://t.me/hermes_coo_sk_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_coo" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'product_coo'});">Открыть COO →</a>
       </div>
       <div class="product-card reveal">
         <span class="product-icon">🏛️</span>
         <span class="product-tag">PREMIUM</span>
         <div class="product-name">Philosopher</div>
         <div class="product-desc" data-i18n="prod3_desc">23 великих философа в одном чате. RAG-система на реальных текстах. Глубокие ответы на сложные вопросы.</div>
-        <a href="https://t.me/hermes_philosopher_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_philosopher">Спросить Философа →</a>
+        <a href="https://t.me/hermes_philosopher_bot" target="_blank" class="product-cta-btn primary" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_philosopher" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'product_philosopher'});">Спросить Философа →</a>
       </div>
       <div class="product-card reveal">
         <span class="product-icon">⚡</span>
@@ -1178,7 +1178,7 @@ footer {
         <div class="product-name">Your AI Team</div>
         <div style="font-size:12px; color:var(--teal); letter-spacing:1px; margin-bottom:8px;" data-i18n="ai_team_tagline">ЦЕНТР УПРАВЛЕНИЯ БУДУЩИМ · 24/7</div>
         <div class="product-desc" data-i18n="prod4_desc">Создаём AI-команду под ваши задачи. Несколько специалистов в одном боте. Под ключ за 2 недели.</div>
-        <a href="https://t.me/hermes_team_ai_bot" target="_blank" class="product-cta-btn outline" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_custom">Обсудить проект →</a>
+        <a href="https://t.me/hermes_team_ai_bot" target="_blank" class="product-cta-btn outline" style="pointer-events: all; position: relative; z-index: 10;" data-i18n="btn_custom" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'product_ai_team'});">Обсудить проект →</a>
       </div>
     </div>
   </div>
@@ -1226,7 +1226,7 @@ footer {
           <li data-i18n="plan1_f2">Hermes Guide доступен</li>
           <li data-i18n="plan1_f3">Базовые функции</li>
         </ul>
-        <a href="https://t.me/hermes_ai_guide_bot" class="price-cta" target="_blank" data-i18n="plan_try">Попробовать</a>
+        <a href="https://t.me/hermes_ai_guide_bot" class="price-cta" target="_blank" data-i18n="plan_try" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'pricing_free'});">Попробовать</a>
       </div>
       <div class="price-card featured reveal">
         <span class="price-badge" data-i18n="plan2_badge">Популярный</span>
@@ -1275,7 +1275,7 @@ footer {
   <h2 class="demo-title reveal" data-i18n="demo_title">Попробуйте прямо<br>сейчас — бесплатно</h2>
   <p class="demo-sub reveal" data-i18n="demo_sub">Откройте бота в Telegram и задайте первый вопрос. Без регистрации. Без карты. Сразу результат.</p>
   <div class="demo-ctas reveal">
-    <a href="https://t.me/hermes_ai_guide_bot" class="btn-primary" target="_blank">
+    <a href="https://t.me/hermes_ai_guide_bot" class="btn-primary" target="_blank" onclick="gtag('event', 'telegram_click', {event_category: 'engagement', button_name: 'demo_open_telegram'});">
       ▶ <span data-i18n="demo_cta1">Открыть в Telegram</span>
     </a>
     <a href="mailto:contact.hermes.ai@gmail.com" class="btn-secondary">
